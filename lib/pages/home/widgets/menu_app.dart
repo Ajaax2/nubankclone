@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:xbank/pages/home/widgets/item_menu.dart';
+import 'package:xbank/pages/home/widgets/icon_menu.dart';
 
 class MenuApp extends StatelessWidget {
   final double top;
@@ -43,7 +43,9 @@ class MenuApp extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 5,),
+              SizedBox(
+                height: 5,
+              ),
               const Text.rich(
                 TextSpan(
                   text: 'Agência ',
@@ -59,7 +61,9 @@ class MenuApp extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 5,),
+              SizedBox(
+                height: 5,
+              ),
               const Text.rich(
                 TextSpan(
                   text: 'Conta ',
@@ -75,11 +79,13 @@ class MenuApp extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               SingleChildScrollView(
                 child: Column(
                   children: const [
-                    ItemMenu(),
+                    IconMenu(),
                   ],
                 ),
               ),

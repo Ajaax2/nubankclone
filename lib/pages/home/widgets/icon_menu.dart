@@ -13,6 +13,10 @@ class IconMenu extends StatelessWidget {
         Container(
           height: 80,
           width: 90,
+          child: const Icon(
+            Icons.account_circle_sharp,
+            color: Colors.deepPurpleAccent,
+          ),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(15.0),
@@ -21,6 +25,10 @@ class IconMenu extends StatelessWidget {
         Container(
           height: 80,
           width: 90,
+          child: const Icon(
+            Icons.credit_card,
+            color: Colors.deepPurpleAccent,
+          ),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(15.0),
@@ -29,6 +37,10 @@ class IconMenu extends StatelessWidget {
         Container(
           height: 80,
           width: 90,
+          child: const Icon(
+            Icons.monetization_on_sharp,
+            color: Colors.deepPurpleAccent,
+          ),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(15.0),
