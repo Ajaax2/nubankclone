@@ -21,7 +21,7 @@ class MyDotsApp extends StatelessWidget {
           SizedBox(
             width: 12,
             child: AnimatedContainer(
-              duration: Duration(milliseconds: 300),
+              duration: const Duration(milliseconds: 300),
               height: 7,
               width: 7,
               decoration: BoxDecoration(
@@ -31,7 +31,7 @@ class MyDotsApp extends StatelessWidget {
           SizedBox(
             width: 12,
             child:AnimatedContainer(
-              duration: Duration(milliseconds: 300),
+              duration: const Duration(milliseconds: 300),
               height: 7,
               width: 7,
               decoration: BoxDecoration(
@@ -41,7 +41,7 @@ class MyDotsApp extends StatelessWidget {
           SizedBox(
             width: 12,
             child: AnimatedContainer(
-              duration: Duration(milliseconds: 300),
+              duration: const Duration(milliseconds: 300),
               height: 7,
               width: 7,
               decoration: BoxDecoration(

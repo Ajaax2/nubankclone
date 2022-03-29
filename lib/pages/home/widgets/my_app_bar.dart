@@ -43,10 +43,13 @@ class MyAppBar extends StatelessWidget {
                     )
                   ],
                 ),
-                Icon(
-                  !showMenu ? Icons.expand_more : Icons.expand_less,
-                  color: Colors.white,
-               ),
+                SizedBox(
+                  height: 5,
+                  child: Icon(
+                    !showMenu ? Icons.expand_more : Icons.expand_less,
+                    color: Colors.white,
+                  ),
+                ),
               ],
             ),
           ),
