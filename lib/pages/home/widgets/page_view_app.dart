@@ -11,7 +11,8 @@ class PageViewApp extends StatelessWidget {
       {Key? key,
       required this.top,
       required this.onChanged,
-      required this.onPanUpdate, required this.showMenu})
+      required this.onPanUpdate,
+      required this.showMenu})
       : super(key: key);
 
   @override
@@ -27,7 +28,9 @@ class PageViewApp extends StatelessWidget {
         onPanUpdate: onPanUpdate,
         child: PageView(
           onPageChanged: onChanged,
-          physics: showMenu? NeverScrollableScrollPhysics() : BouncingScrollPhysics(),
+          physics: showMenu
+              ? NeverScrollableScrollPhysics()
+              : BouncingScrollPhysics(),
           children: const <Widget>[
             CardApp(),
             CardApp(),

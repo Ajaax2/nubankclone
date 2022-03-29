@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:xbank/pages/home/widgets/item_menu.dart';
 
 class MenuApp extends StatelessWidget {
   final double top;
@@ -72,6 +73,14 @@ class MenuApp extends StatelessWidget {
                     fontSize: 12,
                     color: Colors.white,
                   ),
+                ),
+              ),
+              SizedBox(height: 20,),
+              SingleChildScrollView(
+                child: Column(
+                  children: const [
+                    ItemMenu(),
+                  ],
                 ),
               ),
             ],
