@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:xbank/pages/home/widgets/menu_app.dart';
 import 'package:xbank/pages/home/widgets/my_app_bar.dart';
 import 'package:xbank/pages/home/widgets/my_dots_app.dart';
 import 'package:xbank/pages/home/widgets/page_view_app.dart';
@@ -39,6 +40,9 @@ class _HomePageState extends State<HomePage> {
                     _showMenu ? _screenHeight * .75 : _screenHeight * .24;
               });
             },
+          ),
+          MenuApp(
+            top: _screenHeight * .20, showMenu: _showMenu,
           ),
           PageViewApp(
             top: _yPosition,
@@ -81,7 +85,7 @@ class _HomePageState extends State<HomePage> {
               });
             }, showMenu: _showMenu,
           ),
-          MyDotsApp(currentIndex: _currentIndex),
+          MyDotsApp(currentIndex: _currentIndex, showMenu: _showMenu,),
         ],
       ),
     );
